@@ -1,17 +1,13 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-function generatePassword() 
+function generatePassword() {
 
 // Arrays for the generator
 
-var lowerCaseArray = ["a","b","c","d","e","f","g"
-"h","i","j","k","l","m","n","o","p","q","r",
-"s","t","u","v","w","x","y","z"];
+var lowerCaseArray = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 
-var upperCaseArray = ["A","B","C","D","E","F","G"
-"H","I","J","K","L","M","N","O","P","Q","R",
-"S","T","U","V","W","X","Y","Z"];
+var upperCaseArray = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
 var numbArray = ["0","1","2","3","4","5","6","7","8","9"];
 var specialArray = ["@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+"];
@@ -29,9 +25,25 @@ var upperCase = confirm("Would you like to include uppercase letters?")
 var numbers = confirm("Would you like to add numbers?")
 var specialCharacter = confirm("Would you like to add special characters?")
 
+//Conditionals for all the prompts
 
+if (lowerCase) {
+  endArray = endArray.concat(lowerCaseArray);
+}
 
+if (upperCase) {
+  endArray = endArray.concat(upperCaseArray);
+}
 
+if (numbers) {
+  endArray = endArray.concat(numbArray);
+}
+
+if (specialCharacter) {
+  endArray = endArray.concat(specialArray);
+}
+
+}
 
 
 
