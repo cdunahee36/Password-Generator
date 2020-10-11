@@ -3,6 +3,8 @@ var generateBtn = document.querySelector("#generate");
 
 function generatePassword() 
 
+// Arrays for the generator
+
 var lowerCaseArray = ["a","b","c","d","e","f","g"
 "h","i","j","k","l","m","n","o","p","q","r",
 "s","t","u","v","w","x","y","z"];
@@ -12,8 +14,36 @@ var upperCaseArray = ["A","B","C","D","E","F","G"
 "S","T","U","V","W","X","Y","Z"];
 
 var numbArray = ["0","1","2","3","4","5","6","7","8","9"];
-
 var specialArray = ["@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+"];
+
+//empty generator arrays
+
+var endArray = [];
+var clientArray = [];
+
+// Variables for prompts and booleans
+
+var characterLength = prompt("How many characters?, at least 8 and no more than 128.")
+var lowerCase = confirm("Would you like to include lowercase letters?")
+var upperCase = confirm("Would you like to include uppercase letters?")
+var numbers = confirm("Would you like to add numbers?")
+var specialCharacter = confirm("Would you like to add special characters?")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
