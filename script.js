@@ -43,21 +43,12 @@ if (specialCharacter) {
   endArray = endArray.concat(specialArray);
 }
 
+for (var i = 0; i < characterLength; i++) {
+  clientArray.push (endArray[Math.floor(Math.random() * endArray.length)]);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+return clientArray.join("");
+}
 
 
 // Write password to the #password input
